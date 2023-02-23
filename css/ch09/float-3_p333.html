@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float-3_p333</title>
+    <style>
+        div{ padding: 20px; margin: 10px; }
+        .box1{
+            background-color: #ffd800;
+            float: left;
+        }
+        .box2{
+            background-color: #0094ff;
+            float: left;
+        }
+        .box3{
+            background-color: #00ff21;
+        }
+        .box4{
+            background-color: aqua;
+            clear: both;
+            /*
+                clear: both; : float의 영향을 미치지 않도록 하는 속성(선 긋는 느낌)
+                이 속성은 하나에만 주면 됨 (인접한, 같은 레벨에 있는 태그)
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>float-3.html</h1>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+</body>
+</html>

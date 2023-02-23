@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input_p145_163</title>
+</head>
+<body>
+    <div>
+        <input type="range" step="10" max="100" min="50">
+        <!-- 유형마다 적용되는 속성이 다르다. -->
+    </div>
+
+    <div>
+        <label>이미지 선택 <input type="file" accept="image/*"></label>
+    </div>
+    <!-- accept : "image/*" : 이미지 파일만 도출 -->
+    <!-- "application/vnd.ms-excel" : 엑셀 파일 도출 -->
+    <div>
+        히든 <input type="hidden">
+        <!-- hidden 값을 줄 때는 name과 value가 세트로 백엔드에 전달 된다.
+            백엔드에 전달되는 값은 'name'
+        -->
+    </div>
+    <div>
+        이름: <input type="text" name="nm">
+        주소: <input type="text" name="addr">
+        <!--
+            속성과 값은 공백 없이 붙여서 작성해야만 함
+            값의 문자를 띄어쓸 경우 언더바(_)를 사용
+        -->
+    </div>
+    <div>
+        텍스트 필드 : <input type="text" id="textfield" size="10" placeholder="값을 적으시오" value="10" maxlength="10">
+        <!--
+            size는 input 필드의 크기(width)이며,
+            이는 html이 아닌 css로 조절하면 된다.
+            placeholder : 아무것도 작성하지 않았을 때 표시되는 가이드 역할. 
+
+         -->
+    </div>
+
+    <div>
+        <form>
+            <fieldset>
+                <label>아이디: <input type="text" id="user_id" size="10"></label>
+                <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+                <input type="submit" value="로그인">
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- p146 -->
+    <div>
+        검색 text <input type="text">
+        검색 search <input type="search">
+    </div>
+    <div>
+        <form>
+            url <input type="url" disabled readonly>
+            <input type="text" required>
+            <input type="submit" value="전송">
+        </form>
+        <!-- type="url"은 form 태그로 감싸야 제대로 작동됨 -->
+        <!-- disabled : 비활성화 백엔드에 아예 전달 안 됨 -->
+        <!-- readonly : 오직 읽는 용도, 수정이 안 됨 -->
+        <!-- required : 무언가 작성이 되어있어야 넘어가는 속성. 요구성 -->
+        <!-- hidden : 아예 가려져서 수정x 대신 백엔드로 name, value 값이 전달 된다.  -->
+    </div>
+    
+    <div>
+        <form>
+            email <input type="email" name="" id="">
+            tel <input type="tel" name="" id="">
+            <input type="submit" value="전송">
+        </form>
+    </div>
+
+    <div>
+        <form></form>
+            숫자: <input type="number" name="" id="" min="0" max="10">
+            <input type="submit" value="전송">
+        </form>
+    </div>
+    <div>
+        <input type="range" step="10" max="100" min="50" value="50">
+        <!-- 유형마다 적용되는 속성이 다르다. -->
+        <!-- value는 최초값 -->
+    </div>
+
+    <script>
+        const textfield = document.querySelector('#textfield');
+        // querySelector : id, class 등 통일되어 사용되는 최신 코드
+        // const 변수값
+    </script>
+
+</body>
+</html>

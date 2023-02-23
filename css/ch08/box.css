@@ -1,0 +1,63 @@
+
+body{ width: 800px; }
+
+/* ------header------ */
+
+header{
+    background: blue; color: #fff;
+    padding: 15px;
+}
+header h1{
+    display: inline-block;
+    padding: 0 13px;
+}
+
+header nav{
+    width: 72%; height: 60px;
+    text-align: right;
+    display: inline-block;
+}
+header ul{
+    list-style: none; margin: 20px 0;
+}
+header li{
+    margin: 10px;
+    margin-right: 15px;
+    display: inline-block;
+}
+header li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ------section------ */
+
+/* tag */
+section{
+    border: 3px solid;
+    border-bottom: 3em solid;
+}
+section article{
+    border: 2px solid; margin: 15px;
+    padding: 15px; padding-top: 25px;
+}
+section article dt{
+    color: blueviolet; font-weight: bold;
+}
+section article h3{ display: inline; }
+section aside{ padding: 15px; }
+
+/* id */
+section #pet1{
+    border-radius: 10px;
+}
+section #pet2{
+    border: 1px dotted blueviolet;
+    border-radius: 20px;
+}
+section #pet3{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 2px double green;
+}
+

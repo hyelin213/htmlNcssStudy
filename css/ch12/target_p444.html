@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>target_p444</title>
+    <style>
+        div{ height: 600px; }
+        div:target{ background: skyblue; }
+        /*
+        :target 해당 id에 넘어갔을 때(타겟이 되었을 때)
+        타겟팅된 태그에 일시적으로 스타일이 주어지는 가상선택자
+        (타겟팅 되는 태그에 스타일을 부여해야함)
+        */
+    </style>
+</head>
+<body>
+    <h2>target.html</h2>
+    <nav>
+        <a href="#d1">d1</a>
+        <a href="#d2">d2</a>
+        <a href="#d3">d3</a>
+        <a href="#d4">d4</a>
+    </nav>
+    <div id="d1">d1</div>
+    <div id="d2">d2</div>
+    <div id="d3">d3</div>
+    <div id="d4">d4</div>
+</body>
+</html>

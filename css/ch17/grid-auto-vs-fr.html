@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-auto-vs-fr</title>
+    <style>
+        /* https://studiomeal.com/archives/533 */
+        *{ padding: 0; margin: 0; }
+        html, body{ height: 100%; }
+        .container{
+            height: 100%; display: grid;
+            grid-template-rows: auto 1fr auto;
+            /* auto 1fr이 함께 있으면 auto의 기능이 상실된다. */
+        }
+        header{ background: antiquewhite; }
+        footer{ background: brown; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>grid-auto-vs-fr.html</h1>
+        </header>
+        <main>내용</main>
+        <footer>푸터</footer>
+    </div>
+</body>
+</html>

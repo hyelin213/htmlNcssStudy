@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit-reset_p155</title>
+</head>
+<body>
+    <form action="www.naver.com" method="post">
+        <label for="">메일주소 <input type="text"></label>
+        <input type="submit" value="제출">
+        <button>제출2</button>
+        <input type="reset" value="다시입력">
+        <!-- submit과 reset은 form태그 안에서 적용된다. -->
+        <!-- button은 type="submit"이 디폴트값 -->
+        <!-- button태그에도 type="button"을 주면 안 날아감 ex)메일주소 중복 체크할 때 사용(input, button 둘 다 적용) -->
+        <!-- 자바스크립트로 input, button을 동적으로 만들 때는 편한 걸 사용해도 된다(input 추천) -->
+    </form>
+
+    <!-- p157 -->
+
+    <input type="button" value="새 탭 열기" onclick="window.open('newTab.html');">
+    <!-- on~ 속성명은 이벤트를 의미.(무언가 발생하도록 함(프로그래밍 언어)) 속성값에는 자바스크립트 언어가 들어감 -->
+    <!-- onclick="window.open();" : 새 탭이 열림 -->
+    <!-- onclick="window.close();" : window.open();으로 열었던 것만 닫힘 -->
+    <!-- ㄴ버전에 따라 바뀔 수 있으니 계속 공부해야됨!! -->
+</body>
+</html>

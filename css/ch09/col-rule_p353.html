@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>col-rule_p353</title>
+    <style>
+        div{
+            padding: 20px; width: 600px;
+            margin: 20px auto; border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .multi{
+            column-count: 3; column-gap: 40px; /*사이 간격 조절 값*/
+            column-rule: 2px dotted #000; /*구분선*/
+            text-align: justify; /*양쪽 정렬*/
+            /* clumn-count와 rule이 있어야 column-gap과 rule의 효과가 있다. */
+        }
+    </style>
+</head>
+<body>
+    <h1>col-rule.html</h1>
+    <header>
+        <h2>건강에 좋은 식품 - Super Food</h2>
+    </header>
+    <div class="multi">
+        <p><b>코코넛 오일</b>: 남미 파나마에서는 "코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵...."</p>
+        <p><b>코코넛 오일</b>: 남미 파나마에서는 "코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵...."</p>
+        <p><b>코코넛 오일</b>: 남미 파나마에서는 "코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵...."</p>
+    </div>
+</body>
+</html>

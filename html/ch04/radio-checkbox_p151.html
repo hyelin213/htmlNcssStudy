@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio-checkbox_p151</title>
+</head>
+<body>
+    <form>
+        <div>
+            취미 :
+            <label>
+                <input type="checkbox" name="hobby" value="basketball" id="">농구
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="football" id="">축구
+            </label>
+            <label>
+                <input type="checkbox" name="hobby" value="volleyball" id="">배구
+            </label>
+        </div>
+        <div>
+            학년:
+            <label>
+                <input type="radio" name="cls" value="1" id="" checked>1학년
+            </label>
+            <label>
+                <input type="radio" name="cls" value="2" id="">2학년
+            </label>
+            <label>
+                <input type="radio" name="cls" value="3" id="">3학년
+            </label>
+            <!-- radio는 name의 값이 같은 기준으로 단 한가지만 선택이 가능하다. -->
+            <!-- checkbox는 복수 선택 가능 -->
+            <!-- checked는 radio와 checkbox에서만 쓸 수 있다. -->
+            <!-- hobby=football&cls=1&gender=0 : 백엔드는 name값을 전달 받는다 -->
+            성별:
+            <label>
+                <input type="radio" name="gender" value="0" id="" checked>여성
+            </label>
+            <label>
+                <input type="radio" name="gender" value="1" id="">남성
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="저장">
+        </div>
+    </form>
+    <!-- ? = get방식(없으면 post방식) -->
+
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>신청 과목</legend>
+            <div>이 달에 신청할 과목을 선택하세요 (1과목만 가능)</div>
+            <label><input type="radio" name="lang" value="speaking" id="" checked>회화</label>
+            <label><input type="radio" name="lang" value="grammar" id="">문법</label>
+            <label><input type="radio" name="lang" value="writing" id="">작문</label>
+        </fieldset>
+        <fieldset>
+            <legend>메일링</legend>
+            <div>메일로 받고 싶은 뉴스 주제를 선택해 주세요 (복수 선택 가능)</div>
+            <label><input type="checkbox" name="news" value="news" id="" checked>해외 단신</label>
+            <label><input type="checkbox" name="news" value="dialog" id="">5분 회화</label>
+            <label><input type="checkbox" name="news" value="pops" id="">모닝팝스</label>
+        </fieldset>
+        <div>
+            <input type="submit" value="저장">
+        </div>
+    </form>
+</body>
+</html>

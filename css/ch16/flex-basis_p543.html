@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis_p543</title>
+    <style>
+        #container div {
+            flex-basis: 50px;
+            
+            /*
+                내용에 따라 공간의 크기가 달라진다.
+                min-width와 비슷함. (최소 크기/최소 보장)
+
+                flex-basis: auto;는 필요한 만큼한 공간 차지
+
+                flex: grow shrink basis; [축약형]
+            */
+            
+            border: 2px solid #000;
+            background: #ccc; padding: 10px 10px;
+        }
+        #container{
+            margin: 0 auto; display: flex;
+            background: rgb(171, 205, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-basis.html</h1>
+    <div id="container">
+        <div id="box1">
+            <h2>111111111</h2>
+        </div>
+        <div id="box2">
+            <h2>22222</h2>
+        </div>
+        <div id="box3">
+            <h2>3</h2>
+        </div>
+    </div>
+</body>
+</html>

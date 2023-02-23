@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-justify-content_p544</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: center;
+            /*
+                justify-content: start; (defalt)
+                start, center, end
+            */
+
+            /*
+                justify-content(주축)의 속성 space의 종류 
+
+                space-evenly : 사이 간격을 균등하게 해줌
+                space-between : 가장 왼, 오른(위, 아래) item을 끝에 붙이고
+                                공간의 간격을 동일하게 함
+                space-around : item 양쪽의 간격 크기는 똑같고 그 간격은 중첩되지 않는다.
+                               evenly와 비슷하지만 간격의 차이가 있다.
+            */
+
+            flex-direction: row-reverse;
+            height: 800px;
+            background: rgb(192, 214, 255);
+        }
+        #container div{
+            height: 80px;
+            flex-basis: 80px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-justify-content.html</h1>
+    <div id="container">
+        <div id="box1">
+            <h2>1111111111</h2>
+        </div>
+        <div id="box2">
+            <h2>22222</h2>
+        </div>
+        <div id="box3">
+            <h2>3</h2>
+        </div>
+    </div>
+</body>
+</html>

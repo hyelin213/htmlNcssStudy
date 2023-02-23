@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-areas</title>
+    <style>
+        /* https://studiomeal.com/archives/533 */
+        .container{
+            background: yellow; border: 2px solid #000;
+            padding: 2px;
+            display: grid;
+
+            /* grid-template-columns: 1fr 1fr 100px; */
+            grid-template-areas:
+                /* 각 영역마다 이름 지정하기 */
+                "header header header"
+                "a       main       b"
+                ".        .         b" /*.(none)*/
+                "footer footer footer";
+        }
+        .container div{
+            background: coral; border: 2px solid #000;
+            padding: 2px;
+        }
+        .item:nth-child(1){ grid-area: header; }
+        .item:nth-child(4){ grid-area: b; }
+        .item:last-child{ grid-area: footer; }
+    </style>
+</head>
+<body>
+    <h1>grid-areas.html</h1>
+    <div class="container"> <!--grid container-->
+        <!-- container는 1차 자식만 배치한다. -->
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

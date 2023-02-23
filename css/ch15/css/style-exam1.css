@@ -1,0 +1,45 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background:rgb(9, 100, 160);
+}
+#container {
+    width:320px;        
+    margin:50px auto;
+}
+ .card {
+    position:relative;    
+    width:300px;
+    height:500px;
+    margin:20px 10px;
+    border:1px solid #0f0f0f33;
+    background-color:#ffffff;      
+} 
+.words {
+    position:absolute;    
+    left:10px;  /* 텍스트 left 위치 */
+    top:300px;  /* 텍스트 top 위치 */
+    padding:10px;
+    text-align:center;   
+}
+
+@media screen
+and (min-width: 768px)/*이상*/
+and (max-width: 1719px)/*이하*/{
+    #container{ width: 570px; }
+    .card{ width: 550px; height: 250px; }
+    .words{ left: auto; right: 30px; top: 50px; width: 200px; }
+    /* 위치값도 우선되는 값이 있으니 주의하며 적용하기 (예시: left) */
+}
+
+@media screen and (min-width: 1720px){
+    #container{ width: 1710px; }
+    .card{
+        float: left; margin: 10px;
+        width: 550px; height: 250px;
+    }
+    .words{ right: 30px; top: 50px; width: 200px; left: auto; }
+}

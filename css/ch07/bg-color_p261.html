@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg-color_p261</title>
+    <style>
+        *{ box-sizing: border-box; }
+        /* box-sizing : border-box; : border 값 포함하여 사이즈를 정리해줌 */
+
+        body{ background-color: #0094ff; }
+        div{
+            width: 80%;
+            /*
+                백분율도 가능함
+
+                100%를 주면 스크롤이 생김
+                : margin과 padding 값은 무시하고 실제 적용된 값만 가져오고,
+                실제로 조금 더 띄워지기 때문 / html, body에 m0 p0 주면 스크롤x
+                다른 속성에 있는 px도 계산해야됨
+            */
+            background-color: #fff; padding: 15px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>bg-color.html</h1>
+    <div>초콜릿
+        어쩌고 저쩌고
+    </div>
+</body>
+</html>

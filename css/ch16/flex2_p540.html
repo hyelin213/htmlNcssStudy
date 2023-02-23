@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex2_p540</title>
+    <style>
+        #container div {
+            width: 200px; border: 2px solid #000;
+            background: #ccc;
+        }
+        #container{
+            width: 500px; height: 300px;
+            margin: 0 auto; background: rgb(171, 205, 255);
+            display: flex;/*flex-direction의 defalt 값 : row*/
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex2.html</h1>
+    <div id="container"><!--flex container-->
+        <div id="box1"><!--flex item-->
+            <h2>1</h2>
+        </div>
+        <div id="box2">
+            <h2>2</h2>
+        </div>
+        <div id="box3">
+            <h2>3</h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fluid-img4_p509</title>
+    <script>
+        const val = 1025;
+
+        if (val >= 1024) {
+            console.log('1024이상입니다.');
+        } else if (val >= 768){
+            console.log('768이상입니다.');
+        } else if (val >= 320){
+            console.log('320이상입니다.');
+        } else {
+            console.log('320미만입니다.')
+        }
+    </script>
+</head>
+<body>
+    <h1>fluid-img4.html</h1>
+    <picture>
+        <source srcset="images/shop-large.jpg"
+                media="(min-width: 1024px)"> <!--1024 이상-->
+        <source srcset="images/shop-medium.jpg"
+                media="(min-width: 768px)"> <!--1024 미만 ~ 768 이상-->
+        <source srcset="images/shop-small.jpg"
+                media="(min-width: 320px)"><!--768 미만 ~ 320 이상-->
+
+        <!--
+            media는 시점을 의미
+            min-width 주어진 픽셀 값보다 크면 해당 이미지를 적용함
+            
+            이상, 이하, 미만, 초과를 생각해야됨!
+
+            max-width는 원래 크기보다 커질 수는 없다.
+        -->
+        
+        <img src="images/shop.jpg"
+             alt="fill with coffee" style="width: 100%;">
+        <!--
+            img는 inline 태그임에도 불구하고 width 값이 적용됨.
+            (img는 크기 변동의 여지가 충분히 있으므로. 예를 들어
+            span도 폰트 크기가 충분히 크다면 width%값이 적용 됨.)
+        -->
+    </picture>
+</body>
+</html>

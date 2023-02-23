@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mq_p515</title>
+    <style>
+        body{
+            height: 2000px;
+            background: url("images/bg0.jpg") no-repeat fixed;
+            background-size: cover;
+        }
+        /* 순서 중요함 */
+        @media screen and (max-width: 1024px){
+            /*769~1024px 이하*/
+            body{
+                background: url("images/bg1.jpg");
+                /*
+                    no-repeat, fixed 는 이미 주어진 속성이기 때문에
+                    중복하여 적용시킬 필요는 없다.(다르게 주고 싶은 속성만 추가로 넣기)
+                */
+            }
+        }
+        @media screen and (max-width: 768px){
+            /*321~768px 이하*/
+            body{
+                background: url("images/bg2.jpg");
+            }
+        }
+        @media screen and (max-width: 320px){
+            /*320 이하*/
+            body{
+                background: url("images/bg3.jpg");
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>mq.html</h1>
+</body>
+</html>

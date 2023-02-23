@@ -1,0 +1,11 @@
+/* 전체 선택자 */
+*{ margin: 0; padding: 0; }
+p{ color: red; }
+.bluetext{ color: blue; }
+.bold{ font-weight: bold; }
+
+/* p200 */
+#p_1{ text-align: center; }
+/* id는 문서 내에서만 중복되지 않으면 된다 */
+/* class는 css에서, id는 자바스크립트에서 많이 쓴다 */
+h1, .textright{ text-align: right; } /* 그룹 선택자 p201 */

@@ -1,0 +1,96 @@
+html{ scroll-behavior: smooth; }
+
+body{ margin: 0; }
+
+a{
+    text-decoration: none;
+    color: #fff; background: goldenrod;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    display: inline-block;
+    transition: all .3s;
+    /*
+        oapcity나 bgcolor의 시간을 ,를 써서 따로 적용할 수 있지만
+        시간을 같게 하고 싶다면 all을 쓴다.
+    */
+}
+a:hover{ opacity: .6; }
+
+ul{ list-style: none; }
+
+footer{
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    /*가로를 전부 차지하는 값(width:100%; 줘도 됨)*/
+    background: #333; color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.wrapper{ padding-bottom: 60px; }
+/* footer영역 공간 확보 */
+
+/* hero */
+
+.hero{
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    /*
+        최소로 차지할 수 있는 값이 240px,
+        2칸이니까 480px보다 커지는 순간 나뉨(1fr)
+    */
+    color: #fff;
+}
+
+.hero > h1{ font-size: 4rem; }
+.hero > article > p{ font-size: 1.5rem; font-weight: 200; }
+
+/* #breweries */
+
+.breweries{ padding: 1rem 3rem; }
+
+.breweries > ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem; padding: 0;
+}
+
+.breweries > ul > li{
+    border: 1px solid #e2e2e2;
+    border-radius: .5rem;
+}
+
+.breweries > ul > li > figure{
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+}
+
+.breweries > ul > li > figure > img{
+    width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption > h3{
+    color: #fff; padding: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.breweries > ul > li > p{
+    font-size: 1rem; line-height: 1.5;
+    padding: 1rem .75rem;
+}
+.breweries > ul > li > a{
+    margin: 0.5rem;
+}

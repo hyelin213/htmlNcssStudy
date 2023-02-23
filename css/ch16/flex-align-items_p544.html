@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-align-items_p544</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: end;
+
+            /*
+                align-items(교차축): stretch; (defalt)
+                stretch, end, start, center, baseline
+                
+                flex-어쩌고랑 결과값은 똑같음(취향것)
+            */
+
+            flex-direction: row;
+            height: 800px;
+            background: rgb(192, 214, 255);
+        }
+        #container div{
+            height: 80px;
+            flex-basis: 80px;
+            border: 1px solid #000;
+        }
+        #box3{ order: 1; }
+    </style>
+</head>
+<body>
+    <h1>flex-align-items.html</h1>
+    <div id="container">
+        <div id="box1">
+            <h2>1111111111</h2>
+        </div>
+        <div id="box2">
+            <h2>22222</h2>
+        </div>
+        <div id="box3">
+            <h2>3</h2>
+        </div>
+        <div id="box4">
+            <h2>4</h2>
+        </div>
+    </div>
+</body>
+</html>

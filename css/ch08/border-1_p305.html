@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-1_p305</title>
+    <style>
+        div{
+            width: 200px; height: 100px; display: inline-block;
+            margin: 15px; border-width: 15px;
+        }
+        .box1{
+            /*display: none;*/
+            border-style: solid; border-color: bisque red;
+            border-width: thick/*위*/ thin/*오른*/ 20px/*아래*/ 10px/*왼*/;
+        }
+        .box2{
+            /*visibility: hidden;*/ border-style: dotted;
+            border-top-color: red;
+        }
+        .box3{ /*opacity: 0;*/ border-style: dashed; }
+        /*
+        태그를 숨기는 속성
+        display: none; : 브라우저에서 소스가 아예 없는 것으로 취급(공간차지를 하지 않음)
+        visibility: hidden; : 안 보이지만 공간차지를 함(opacity와 동일)
+        opacity는 숨길 때는 쓰지 않는 게 좋음!
+        */
+    </style>
+</head>
+<body>
+    <h1>border-1.html</h1>
+    <div class="box1"> </div>
+    <div class="box2"> </div>
+    <div class="box3"> </div>
+</body>
+</html>

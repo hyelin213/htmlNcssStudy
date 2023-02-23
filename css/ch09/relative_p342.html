@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative_p342</title>
+    <style>
+        div{ padding: 20px; }
+        .box1{
+            float: left;
+            width: 100px;
+            background-color: #ffd800; 
+            margin-right: 10px;
+        }
+        .box2{
+            position: relative;
+            top: 30px; left: -50px; /* margin과 비슷한 역할 */
+            width: 300px;
+            background-color: #0094ff;
+            float: left;
+        }
+        /*
+        float속성을 준 것에 position: relative;의 속성이 존재한다면
+        float값을 준 후의 위치 기준에서 위치값을 설정할 수 있다.
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+</body>
+</html>

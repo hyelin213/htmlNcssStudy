@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!--
+    html5를 나타내는 중요한 부분
+    검색엔진에 다 뜨기 위해서
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--
+        charset="UTF-8" : 유니코드. 문자열 테이블. 필수 문자 인코딩 방식
+        UTF-16, UTF-32 등... 8이 제일 효율적임
+        없으면 한글 깨짐!!
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- IE에 적용할 때 EDGE의 방식으로 화면에 나타나는 것 것 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        웹, 앱의 화면을 개발할 수 있게 해주는 중요 코드
+        모바일 화면에 적절하게 적용될 수 있는 meta 코드
+        initial-scale : 화면을 1:1 비율로 나오게 도와줌
+    -->
+    <title>hello</title>
+    <!-- 탭 부분에 나타남 -->
+</head>
+<body>
+    <!-- viewport에 나타나는 부분 -->
+    <h1>
+        <div class="abc" id="a1111">hello</div>
+        <!-- class="abc" : 속성명, 123(속성값)은 숫자가 아닌 문자열 -->
+        <div>stranger</div>
+    </h1>
+    <a href="https://www.naver.com" target="_blank">NAVER</a>
+    <!--
+        href는 div에서는 적용되지 않음
+        href : 속성명/ https://~ : 속성값
+        target="_blank" : 새 창으로 연결됨
+    -->
+    <div>nice to meet you</div>
+
+    <!-- 1.내 컴퓨터에 있는 이미지 파일 -->
+
+    <img src="img/a.jpg" alt="이미지 정보, 검색 엔진 노출에 도움 됨">
+    <!--
+        src : 소스
+    -->
+    <img src="../b.jpg" alt="" title="식물사진">
+    <!--
+        ./ : 현재 폴더(생략 가능)
+        ../ : 상위 폴더로 올라감
+        ../../~.jpg : 상위폴더 위에 있는 상위폴더에 ~.jpg파일 불러옴
+        ../../images/~.jpg : 상위, 상위, images 폴더의 ~..jpg파일 불러옴
+    -->
+    <img src="../image/c.jpg" alt="">
+
+    <!-- 2.인터넷 상의 이미지 파일 -->
+
+    <img src="https://postfiles.pstatic.net/MjAyMjA4MjBfMTIw/MDAxNjYwOTc1Njk5NTkz.p68PFvXhfLknfiwPc0rkd12mPptdq0vbZyDHmFi0D0Qg.hhuq88Tq6WdRcxTdVbJYJeS3wK_RLldKpKkSnS16gJsg.JPEG.greenerworld/SE-227565F5-5E42-4F9C-BF7F-8BDCDEE7673B.jpg?type=w966" alt="">
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datalist</title>
+</head>
+<body>
+    <form action="">
+        <input list="location_list" name="location">
+
+        <datalist id="location_list">
+            <option value="1" label="서울">
+            <option value="2" label="대전">
+            <option value="대구">
+            <option value="부산">
+        </datalist>
+        <div><input type="submit" value="전송"></div>
+        <!--
+            속성명은 list. 값은 연결되는 id값을 줘야된다.
+            option은 value의 값이 추출된다.
+            select는 무조건 만들어진 옵션 내에 있는 것만,
+            datalist는 조금 더 유연하고 기능이 많다.
+        -->
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date_p153</title>
+</head>
+<body>
+    <div>
+        <label>
+            date:
+            <input type="date" value="2022-09-14" min="2022-09-10" max="2022-09-25" step="3">
+            <!-- modal : 새로운 탭에서 생성되는 것이 아닌 뷰포트 내에서 드러나는 창 -->
+            <!-- value에 적용되는 리터럴(상수)값 : 변화되지 않는 값 -->
+        </label>
+    </div>
+    <form>
+        <div>
+            <label>
+                time:
+                <input type="time" value="18:01" min="09:00">
+            </label>
+            <!-- input:time의 min값은 이외의 값 적용 시 오류를 띄운다.(date는 아예 비활성화됨) -->
+        </div>
+        <input type="submit" value="전송">
+    </form>
+    <div>
+        <label for="">
+            datetime:
+            <input type="datetime-local" name="" id="">
+            <!-- input:datetime은 html5에서는 구현이 막혔다가 html5.1부터 다시 적용됨 -->
+        </label>
+    </div>
+</body>
+</html>

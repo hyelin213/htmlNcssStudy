@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-layout2_p364</title>
+    <style>
+        table, td { border: 1px solid #ccc; }
+        .table1{
+            border-collapse: collapse; width: 300px;
+            table-layout: fixed; height: auto;
+            word-break: break-all;
+            /*
+                word-break, word-wrap : 줄 바꿈을 위해 사용한다.
+
+                normal : 한글은 음절마다, 영어는 space마다 중간 점이 생긴다.
+                break-all : 한글 영어 상관없이 중간 점이 생긴다. 
+                keep-all : space준 것만 중간 점이 생긴다.
+
+                개행된다는 말인가,,
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>table-layout2.html</h1>
+    <table class="table1">
+        <tr>
+            <td>한글로띄어쓰기없이길게붙여넣기</td>
+            <td>long_description_without_space</td>
+        </tr>
+    </table>
+</body>
+</html>

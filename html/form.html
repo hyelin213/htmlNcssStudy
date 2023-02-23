@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <!-- 
+            action : 목적지(백엔드 주소값)
+            method : post방식(짐을 트렁크), get방식(짐을 차 위에(노출시킨다는 느낌) 기호표기 : ?)
+            get방식이 조금 빠르고 post방식은 안정성이 두드러진다.
+        -->
+        <div>
+            <input type="hidden" name="hdVal" value="ie">
+            <!-- name=백엔드로 전달 됨 -->
+        </div>
+        <div>
+            <!-- div : *Block 태그 -->
+            <label>이름:<input type="text" placeholder="Name" name="nm"></label>
+            <!-- label : '이름'을 누르면 입력칸에 포커싱 해 줌 -->
+        </div>
+        <div>
+            <label>남긴말:<textarea placeholder="Comment" name="cmt"></textarea></label>
+            <!-- textarea는 실무에서 잘 안 씀 -->
+        </div>
+        <select name="" id="">
+            <option value="">서울</option>
+            <option value="">대구</option>
+            <option value="">대전</option>
+        </select>
+        <div>
+            <input type="submit" value="전송">
+            <input type="reset" value="리셋">
+        </div>
+    </form>
+    <!-- form : PHP, ASP, JSP 등 백엔드에 데이터를 묶어서 전송할 때 사용하는 전통적인 방법 -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>col-break_p354</title>
+    <style>
+        .multi{
+            column-count: 4;
+            column-rule: 2px dotted #000;
+            text-align: justify;
+        }
+        .multi h3{ break-before: column; }
+        /* break-before: column; 단을 정리해줌
+
+            before : 단의 시작점으로 지정
+            after : 단의 마지막으로 지정
+            inside : defalt 값
+        */
+    </style>
+</head>
+<body>
+    <h1>col-break.html</h1>
+    <h2>건강에 좋은 식품 - Super Food</h2>
+    <h3>코코넛 오일</h3>
+    <p><b>코코넛 오일</b>: 남미 파나마에서는 "코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵...."</p>
+    <section>
+        <div class="multi">
+            <h3>아보카도</h3>
+            <p><b>코코넛 오일</b>: 남미 파나마에서는 "코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵...."</p>
+            <h3>아보카도</h3>
+            <p><b>코코넛 오일</b>: 남미 파나마에서는 "코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵...."</p>
+            <h3>아보카도</h3>
+            <p><b>코코넛 오일</b>: 남미 파나마에서는 "코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵....코코넛오일 한컵...."</p>
+        </div>
+    </section>
+    
+</body>
+</html>

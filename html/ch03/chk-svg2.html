@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chk-svg</title>
+</head>
+<body>
+    
+    <h1>SVG 이미지 삽입하기</h1>
+    <img id="img" src="images/muffin.svg" alt="">
+    <!--
+        img에 들어갈 수있는 속성값 onerror는 자바스크립트 코드를 넣을 수 있다.
+        ex) this.onerror=null; this.src="images/muffin.png"
+        onerror : 이벤트(무언가를 했을 때) 속성. src 내용이 파일 경로일 때는 적용이 안 됨
+        this.onerror=null : 이벤트가 반복되지 않도록 애초에 지워버림
+        onclick="alert('클릭했네');"
+        소프트웨어는 이벤트가 일어날 수 있다를 기본값으로 외울 것
+        on~=이벤트(~했을 때)
+    -->
+
+    <script src="js/modernizr-custom.min.js"></script>
+    <!-- src= 파일 인포트 script태그는 script 파일 중 가장 위에 있어야 한다. -->
+    <script>
+        if(!Modernizr.svgasimg){
+            var img = document.getElementById('img');
+            //document.getElementById('img'); : 문서에서 'Id'('img') 주소값을 찾아내겠다.
+            //getElementById : 메서드는 주어진 문자열과 일치하는 id속성을 가진 요소를 찾고,
+            //이를 나타내는 Element 객체를 반환한다.
+            //img <= document 문서(document)에서 img 찾을게~
+            img.setAttribute('src','images/muffin.png');
+            //set(값을 바꾸다(수정)) get(값을 꺼내다)
+            //setAttribute : method를 호출한 것
+            //첫번째 : 어느 속성, 두번째 : 실제로 바꾸고 싶은 값
+        }
+    </script>
+    
+</body>
+</html>

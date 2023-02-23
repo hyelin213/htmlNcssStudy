@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chk-svg</title>
+</head>
+<body>
+    
+    <h1>SVG 이미지 삽입하기</h1>
+    <img id="img" src="images/muffin.svg" alt="">
+    <!--
+        img에 들어갈 수있는 속성값 onerror는 자바스크립트 코드를 넣을 수 있다.
+        ex) this.onerror=null; this.src="images/muffin.png"
+    -->
+
+    <script src="js/modernizr-custom.min.js"></script>
+    <!-- src= 파일 인포트 script태그는 script 파일 중 가장 위에 있어야 한다. -->
+    <script>
+        if(!Modernizr.svgasimg){ //!true > false, !false > true
+            //a
+            console.log('SVG 가능');
+        } else {
+            //b
+            console.log('SVG 불가능');
+        }
+        // 분기문
+    </script>
+
+</body>
+</html>

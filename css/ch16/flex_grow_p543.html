@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_grow_p543</title>
+    <style>
+        #container div {
+            /*width: 200px;*/ border: 2px solid #000;
+            background: #ccc;
+            padding: 0 10px;
+        }
+        #container{
+            width: 800px; height: 300px;
+            /* width 값이 없으면 창의 크기에 따라 비율도 함께 늘어난다 */
+            margin: 0 auto; background: rgb(171, 205, 255);
+            display: flex;
+        }
+        #box1{ flex-grow: 1; }
+        #box2{ flex-grow: 3; }
+        #box3{ flex-grow: 3; }
+        #box4{ flex-grow: 3; }
+        /*
+            flex-grow: $; 비율을 정하는 속성
+
+            #box1은 1/10 만큼, #box2~4는 3/10만큼 차지함
+        */        
+    </style>
+</head>
+<body>
+    <h1>flex_grow.html</h1>
+    <div id="container">
+        <div id="box1">
+            <h2>1</h2>
+        </div>
+        <div id="box2">
+            <h2>2</h2>
+        </div>
+        <div id="box3">
+            <h2>3</h2>
+        </div>
+        <div id="box4">
+            <h2>4</h2>
+        </div>
+    </div>
+</body>
+</html>

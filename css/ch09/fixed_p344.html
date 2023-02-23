@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed_p344</title>
+    <style>
+        #fx{
+            position: fixed;
+            top: 0; right: 0; left: 0;
+            height: 50px;
+            background-color: #ff6a00;
+            /* width값을 주지 않고 위치값 3개 이상을 줬을 때 꽉 채운 칸 만들기가 가능하다. */
+        }
+        #content{ width: 400px; height: 2000px; }
+        p{ left: 30px; }
+    </style>
+</head>
+<body>
+    <div id="fx"></div>
+    <div id="content">
+        <p>fixed 값을 사용하는 요소</p>
+        <p>fixed 값을 사용하는 요소</p>
+    </div>
+</body>
+</html>

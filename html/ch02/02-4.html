@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-4</title>
+    <style>
+        table{border-collapse: collapse; caption-side: bottom;}
+        /*
+        border-collapse : collapse; : 중복되는 표와 셀의 테두리를 한 줄로 표시
+        caption-side: bottom; : caption의 위치가 아래로 감
+         */
+        table, th, td{border: 1px solid #000; padding:10px;}
+        /* 
+        color -> rgb(n,n,n,0.n);
+        0.n : 투명도 조절
+        style은 head, body 어디에 두어도 상관 없지만 보통 head 태그에 둠
+        px의 고정값은 자제하는 것이 좋음. (rem, em, vw, vh)
+        */
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <!-- 행(row), 한 줄을 의미 -->
+            <th>번호</th>
+            <th>이름</th>
+            <th>성별</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>신사임당</td>
+            <td>여성</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>홍길동</td>
+            <td>남성</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <td colspan="2">1</td>
+            <td rowspan="3">2</td>
+            <!-- <td>3</td> -->
+
+            <!-- colspan : 오른쪽으로 칸을 차지함/기본값 : 1 -->
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <!-- rowspan : 아래쪽으로 칸을 차지함 -->
+            <td>5</td>
+            <!-- <td>6</td> -->
+        </tr>
+        <tr>
+            <!-- <td>7</td> -->
+            <td>8</td>
+            <!-- <td>9</td> -->
+        </tr>
+        <!-- rowspan : 아래로 칸을 차지함 -->
+        <!-- 차지하는 수만큼 <td>의 수를 줄여야함 -->
+    </table>
+    <hr>
+
+    <p id="summary">테이블 설명</p>
+    <!--
+        id : 유일값. 중복으로 사용할 수 없는 원칙을 가짐(JS에서 많이 사용)
+        class : 중복 사용 가능(CSS에서 많이 사용)
+    -->
+    <!--
+        table, caption, thead, tbody, tfoot, tr, th, td
+        tfoot : 요약 내용
+    -->
+
+    <table aria-describedby="summary">
+        <!--
+            aria-describedby 에는 id값만 와야된다.
+            id에 있는 내용이 해당 table의 설명 역할을 한다.
+        -->
+        <caption>
+            <strong>Modern Browser</strong>
+            <!-- strong은 inline 태그 -->
+            <p>국내에서 자주 사용하는 모던 브라우저</p>
+        </caption>
+        <thead>
+            <tr>
+                <th>브라우저</th>
+                <th>제조업체</th>
+                <th>다운로드</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>크롬(Chrome)</th>
+                <td>Google</td>
+                <td>https://www.google.com/chrome/</td>
+            </tr>
+            <tr>
+                <th>파이어폭스(Firefox)</th>
+                <td>Mozilla</td>
+                <td>https://www.mozilla.org/ko/firefox/</td>
+            </tr>
+            <tr>
+                <th>엣지(Edge)</th>
+                <td>Microsoft</td>
+                <td>https://www.microsoft.com/ko-kr/windows/microsoft-edge</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <span>인라인태그</span>
+    <div>블록태그</div>
+    <!-- 개행되는 모양 보기 -->
+</body>
+</html>

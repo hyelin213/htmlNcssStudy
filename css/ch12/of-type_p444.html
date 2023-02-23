@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>of-type_p444</title>
+    <style>
+        div p:first-of-type { color: red; }
+        /*
+            first-child로 호출된 것은 어떤 태그보다
+            가장 위에 있을 때 적용된다.
+            
+            first-of-type은 타입(태그)별로 첫번째인 태그(들)에 적용된다.
+        */
+    </style>
+</head>
+<body>
+    <h1>of-type.html</h1>
+    <div>
+        <div>text1</div>
+        <p>text2</p>
+        <p>text3</p>
+    </div>
+</body>
+</html>
